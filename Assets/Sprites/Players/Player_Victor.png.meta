@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: 54fcdc50d63e8fc63bb7f46d161670b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4142297546404602162
+    second: Player_Victor_0
+  - first:
+      213: 8512266061293177672
+    second: Player_Victor_1
+  - first:
+      213: 922117210727104968
+    second: Player_Victor_2
+  - first:
+      213: 6969158016886937557
+    second: Player_Victor_3
+  - first:
+      213: -9178538879830057633
+    second: Player_Victor_4
+  - first:
+      213: 8787059240162457216
+    second: Player_Victor_5
+  - first:
+      213: -2043233448529329467
+    second: Player_Victor_6
+  - first:
+      213: 6550090292507610763
+    second: Player_Victor_7
+  - first:
+      213: -5754849282820415758
+    second: Player_Victor_8
+  - first:
+      213: 5050780149713901230
+    second: Player_Victor_9
+  - first:
+      213: -2225431977438860379
+    second: Player_Victor_10
+  - first:
+      213: -5625652192595369297
+    second: Player_Victor_11
+  - first:
+      213: -5451795617762798056
+    second: Player_Victor_12
+  - first:
+      213: 7930786486572710997
+    second: Player_Victor_13
+  - first:
+      213: 2018424343188266774
+    second: Player_Victor_14
+  - first:
+      213: 2582515351104505312
+    second: Player_Victor_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 62
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_Victor_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 300
+        width: 104
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2312b6feba56c7930800000000000000
+      internalID: 4142297546404602162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 300
+        width: 99
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b4ef002e4a12670800000000000000
+      internalID: 8512266061293177672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 300
+        width: 95
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1c9a2b7b40ccc00800000000000000
+      internalID: 922117210727104968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 297
+        width: 88
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d79c1cca4c67b060800000000000000
+      internalID: 6969158016886937557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 298
+        width: 89
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d1e9ec4874f9080800000000000000
+      internalID: -9178538879830057633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_5
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 298
+        width: 93
+        height: 146
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0867236b2d7e1f970800000000000000
+      internalID: 8787059240162457216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 88
+        width: 72
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2863b010af4a3e0800000000000000
+      internalID: -2043233448529329467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 89
+        width: 74
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e86abca6896ea50800000000000000
+      internalID: 6550090292507610763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_8
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 88
+        width: 73
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fed399511ba220b0800000000000000
+      internalID: -5754849282820415758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_9
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 88
+        width: 69
+        height: 159
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea69a4639c9f71640800000000000000
+      internalID: 5050780149713901230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_10
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 88
+        width: 79
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab26f8486dad11e0800000000000000
+      internalID: -2225431977438860379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_11
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 88
+        width: 71
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2a476032bade1b0800000000000000
+      internalID: -5625652192595369297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_12
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 102
+        width: 75
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816973f35c45754b0800000000000000
+      internalID: -5451795617762798056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_13
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 113
+        width: 87
+        height: 168
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c72a95a40df0e60800000000000000
+      internalID: 7930786486572710997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_14
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 95
+        width: 79
+        height: 153
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fdcbdfe32e20c10800000000000000
+      internalID: 2018424343188266774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Victor_15
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 89
+        width: 70
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5634829, y: 0.5419224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5c3917700f6d320800000000000000
+      internalID: 2582515351104505312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c27d46b0b339f6e4aabaa1b7c30bc6fa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5634828805923462,"y":0.541922390460968},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Player_Victor_0: 4142297546404602162
+      Player_Victor_1: 8512266061293177672
+      Player_Victor_10: -2225431977438860379
+      Player_Victor_11: -5625652192595369297
+      Player_Victor_12: -5451795617762798056
+      Player_Victor_13: 7930786486572710997
+      Player_Victor_14: 2018424343188266774
+      Player_Victor_15: 2582515351104505312
+      Player_Victor_2: 922117210727104968
+      Player_Victor_3: 6969158016886937557
+      Player_Victor_4: -9178538879830057633
+      Player_Victor_5: 8787059240162457216
+      Player_Victor_6: -2043233448529329467
+      Player_Victor_7: 6550090292507610763
+      Player_Victor_8: -5754849282820415758
+      Player_Victor_9: 5050780149713901230
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

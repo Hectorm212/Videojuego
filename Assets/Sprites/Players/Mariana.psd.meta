@@ -1,0 +1,834 @@
+fileFormatVersion: 2
+guid: d385c4c0f693243478a65890476d8764
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6264979566114709455
+    second: Mariana_0
+  - first:
+      213: -8658040691395489287
+    second: Mariana_1
+  - first:
+      213: 2927794581603667498
+    second: Mariana_2
+  - first:
+      213: -2019795465122773706
+    second: Mariana_3
+  - first:
+      213: 3972396970773720568
+    second: Mariana_4
+  - first:
+      213: -1682227143736911897
+    second: Mariana_5
+  - first:
+      213: 5713196024865287072
+    second: Mariana_6
+  - first:
+      213: -9194266387058115490
+    second: Mariana_7
+  - first:
+      213: -2702540189156193331
+    second: Mariana_8
+  - first:
+      213: -8181964497042552266
+    second: Mariana_9
+  - first:
+      213: 1706612942574699812
+    second: Mariana_10
+  - first:
+      213: 2680853356582329889
+    second: Mariana_11
+  - first:
+      213: -935076164594213557
+    second: Mariana_12
+  - first:
+      213: 2254596507050592297
+    second: Mariana_13
+  - first:
+      213: -5083559015261080712
+    second: Mariana_14
+  - first:
+      213: -1160825026738182730
+    second: Mariana_15
+  - first:
+      213: 7009343810826710808
+    second: Mariana_16
+  - first:
+      213: 5839731207715535511
+    second: Mariana_17
+  - first:
+      213: 5397632155271911994
+    second: Mariana_18
+  - first:
+      213: -4607071835896928664
+    second: Mariana_19
+  - first:
+      213: -606266209498192476
+    second: Mariana_20
+  - first:
+      213: -3865017069863502161
+    second: Mariana_21
+  - first:
+      213: -5557034603413143003
+    second: Mariana_22
+  - first:
+      213: -5965027676098425452
+    second: Mariana_23
+  - first:
+      213: -7575989490035824021
+    second: Mariana_24
+  - first:
+      213: 9109014404749127124
+    second: Mariana_25
+  - first:
+      213: 1633016643266352239
+    second: Mariana_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mariana_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 773
+        width: 184
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf195bd8bda1f650800000000000000
+      internalID: 6264979566114709455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 773
+        width: 173
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f19e7a0dd578d780800000000000000
+      internalID: -8658040691395489287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 777
+        width: 150
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ecccbe8ad91a820800000000000000
+      internalID: 2927794581603667498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_3
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 773
+        width: 171
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635896ec9be38f3e0800000000000000
+      internalID: -2019795465122773706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_4
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 774
+        width: 174
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd2ecd8ff9c02730800000000000000
+      internalID: 3972396970773720568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_5
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 775
+        width: 175
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e79a0a535787a8e0800000000000000
+      internalID: -1682227143736911897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_6
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 777
+        width: 175
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abe44ac389594f40800000000000000
+      internalID: 5713196024865287072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_7
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 777
+        width: 171
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c361d2f67676080800000000000000
+      internalID: -9194266387058115490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 517
+        width: 164
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbc0224406ae7ad0800000000000000
+      internalID: -2702540189156193331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_9
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 517
+        width: 153
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63acbecc3a2d37e80800000000000000
+      internalID: -8181964497042552266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_10
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 515
+        width: 159
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425cf33ed6b1fa710800000000000000
+      internalID: 1706612942574699812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_11
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 513
+        width: 148
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ed00e8ced443520800000000000000
+      internalID: 2680853356582329889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_12
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 512
+        width: 158
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d5d6bbe21f503f0800000000000000
+      internalID: -935076164594213557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_13
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 515
+        width: 156
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928469ae39fe94f10800000000000000
+      internalID: 2254596507050592297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_14
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 236
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873f0ac62029379b0800000000000000
+      internalID: -5083559015261080712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 236
+        width: 162
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b523ead9cbe3efe0800000000000000
+      internalID: -1160825026738182730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_16
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 257
+        width: 168
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fa8e01f01364160800000000000000
+      internalID: 7009343810826710808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 264
+        width: 173
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ab5abd794ea0150800000000000000
+      internalID: 5839731207715535511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_18
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 253
+        width: 157
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a553be8dd38ea40800000000000000
+      internalID: 5397632155271911994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_19
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 231
+        width: 152
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86628a613946010c0800000000000000
+      internalID: -4607071835896928664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 18
+        width: 157
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5a987381c1697f0800000000000000
+      internalID: -606266209498192476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_21
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 12
+        width: 158
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faef6f3e373bc5ac0800000000000000
+      internalID: -3865017069863502161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_22
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 12
+        width: 160
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522810b787271e2b0800000000000000
+      internalID: -5557034603413143003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 12
+        width: 157
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d87c2cee6f73da0800000000000000
+      internalID: -5965027676098425452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_24
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 23
+        width: 152
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a6258b2bdacd690800000000000000
+      internalID: -7575989490035824021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_25
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 12
+        width: 156
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddecf8e658b96e70800000000000000
+      internalID: 9109014404749127124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariana_26
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 12
+        width: 153
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6411362cf3a9a610800000000000000
+      internalID: 1633016643266352239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mariana_0: 6264979566114709455
+      Mariana_1: -8658040691395489287
+      Mariana_10: 1706612942574699812
+      Mariana_11: 2680853356582329889
+      Mariana_12: -935076164594213557
+      Mariana_13: 2254596507050592297
+      Mariana_14: -5083559015261080712
+      Mariana_15: -1160825026738182730
+      Mariana_16: 7009343810826710808
+      Mariana_17: 5839731207715535511
+      Mariana_18: 5397632155271911994
+      Mariana_19: -4607071835896928664
+      Mariana_2: 2927794581603667498
+      Mariana_20: -606266209498192476
+      Mariana_21: -3865017069863502161
+      Mariana_22: -5557034603413143003
+      Mariana_23: -5965027676098425452
+      Mariana_24: -7575989490035824021
+      Mariana_25: 9109014404749127124
+      Mariana_26: 1633016643266352239
+      Mariana_3: -2019795465122773706
+      Mariana_4: 3972396970773720568
+      Mariana_5: -1682227143736911897
+      Mariana_6: 5713196024865287072
+      Mariana_7: -9194266387058115490
+      Mariana_8: -2702540189156193331
+      Mariana_9: -8181964497042552266
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
