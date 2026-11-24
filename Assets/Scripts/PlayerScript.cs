@@ -1,9 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
     public static PlayerScript obj;
+    [Header("UI Game Over")]
+    [SerializeField] private GameObject gameOverPanel; // Arrastrarás aquí tu panel o fondo negro de Game Over
+
+    [Header("Reinicio")]
+    [SerializeField] private string firstLevelName = "Nivel1"; // Nombre exacto de tu primera escena
+    private bool isDead = false;
 
     [Header("Vidas")]
     [SerializeField] private int maxLives = 3;      // Vidas máximas configurables
@@ -27,6 +34,12 @@ public class PlayerScript : MonoBehaviour
     private bool isInvulnerable = false;
     private float invulnerabilityTimer = 0f;
 
+    [Header("Efectos de Sonido")]                         ///Sonido
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip coinSound;
+    [SerializeField] private AudioClip deathSound;
+
     // Animators
     private Animator animator;
 
@@ -48,53 +61,82 @@ public class PlayerScript : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        lives = maxLives; // Inicializamos con las vidas máximas
+
+        // Toma las vidas guardadas en GameManager si existe; si no, usa maxLives
+        if (GameManager.Instance != null)
+        {
+            lives = GameManager.Instance.lives;
+            GameManager.Instance.SetLives(lives);
+        }
+        else
+        {
+            lives = maxLives;
+        }
+
+        // Buscar el AudioSource de forma segura
+        audioSource = GetComponent<AudioSource>();
+
+        // Si por alguna razón sigue sin tenerlo, se lo agregamos automáticamente por código
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     private void Update()
     {
         CheckFlip();
-        UpdateGroundedState(); // Corregido: typo
-        UpdateInvulnerability(); // Nueva función
+        UpdateGroundedState();
+        UpdateInvulnerability();
+        CheckRestartInput();
 
         animator.SetFloat("Horizontal", Mathf.Abs(horizontalMovement));
         animator.SetBool("IsGrounded", isGrounded);
-
     }
 
     void FixedUpdate()
     {
+        if (isDead) return;
         rb2D.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb2D.linearVelocity.y);
     }
 
     public void Move(InputAction.CallbackContext context)
     {
+        if (isDead) return;
         horizontalMovement = context.ReadValue<Vector2>().x;
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (!context.performed || !isGrounded)
+        if (isDead || !context.performed || !isGrounded)
             return;
 
         animator.SetTrigger("Jump");
         rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpHeight);
+
+        // Reproducir sonido de salto
+        if (audioSource != null && jumpSound != null)
+        {
+            audioSource.PlayOneShot(jumpSound);
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
+        if (grounCheck == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(grounCheck.position, groundCheckSize);
     }
 
     void UpdateGroundedState()
     {
+        if (grounCheck == null) return;
         isGrounded = Physics2D.OverlapBox(grounCheck.position, groundCheckSize, 0, groundLayer);
     }
 
     void CheckFlip()
     {
-        if (horizontalMovement == 0)
+        if (isDead || horizontalMovement == 0)
             return;
 
         bool movingRight = horizontalMovement > 0;
@@ -108,39 +150,65 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private void CheckRestartInput()
+    {
+        if (!isDead) return;
+
+        var keyboard = Keyboard.current;
+        if (keyboard == null) return;
+
+        if (keyboard.spaceKey.wasPressedThisFrame || keyboard.enterKey.wasPressedThisFrame)
+        {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.ResetGameData(maxLives);
+            }
+
+            SceneManager.LoadScene(firstLevelName);
+        }
+    }
+
     // ============================================
-    //   SISTEMA DE VIDAS / DAÑO
+    //   SISTEMA DE VIDAS / DAÑO / SONIDOS
     // ============================================
 
     /// <summary>
-    /// Llamar SOLO cuando el jugador reciba daño (colisión con enemigo, trampa, etc.)
+    /// Método público para que Coin.cs reproduzca el sonido al recogerla
     /// </summary>
+    public void PlayCoinSound()
+    {
+        if (audioSource != null && coinSound != null)
+        {
+            audioSource.PlayOneShot(coinSound);
+        }
+    }
+
     public void GetDamage(int damageAmount = 1)
     {
-        // Si está invulnerable o ya está muerto, ignoramos el daño
-        if (isInvulnerable || lives <= 0)
+        if (isDead || isInvulnerable || lives <= 0)
             return;
 
         lives -= damageAmount;
+        if (lives < 0) lives = 0;
+
         Debug.Log($"Jugador recibió daño. Vidas restantes: {lives}");
 
-        // Activamos invulnerabilidad temporal
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.SetLives(lives);
+        }
+
         isInvulnerable = true;
         invulnerabilityTimer = invulnerabilityTime;
 
-        // Feedback visual (parpadeo)
         StartCoroutine(BlinkEffect());
 
-        // Verificamos muerte
         if (lives <= 0)
         {
             Die();
         }
     }
 
-    /// <summary>
-    /// Actualiza el temporizador de invulnerabilidad
-    /// </summary>
     private void UpdateInvulnerability()
     {
         if (!isInvulnerable) return;
@@ -153,16 +221,13 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Efecto de parpadeo mientras es invulnerable
-    /// </summary>
     private System.Collections.IEnumerator BlinkEffect()
     {
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         if (sr == null) yield break;
 
         float blinkInterval = 0.1f;
-        while (invulnerabilityTimer > 0f)
+        while (invulnerabilityTimer > 0f && !isDead)
         {
             sr.enabled = !sr.enabled;
             yield return new WaitForSeconds(blinkInterval);
@@ -170,28 +235,51 @@ public class PlayerScript : MonoBehaviour
         sr.enabled = true;
     }
 
-    /// <summary>
-    /// Lógica de muerte del jugador
-    /// </summary>
     private void Die()
     {
-        Debug.Log("💀 Jugador ha muerto");
-        // esta se activa solo si tenemos la animacion de muerte animator.SetTrigger("Death"); // Si tienes animación de muerte
-        rb2D.linearVelocity = Vector2.zero;
-        this.gameObject.SetActive(false);
+        if (isDead) return;
+        isDead = true;
 
-        // Aquí puedes agregar:
-        // - GameManager.OnPlayerDeath();
-        // - Reiniciar nivel
-        // - Mostrar pantalla de Game Over
+        Debug.Log("💀 Jugador ha muerto");
+
+        // Detener el tiempo persistente al morir
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.StopTimer();
+        }
+
+        // Reproducir sonido de muerte en la posición actual
+        if (deathSound != null)
+        {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
+        }
+
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+
+        if (rb2D != null)
+        {
+            rb2D.linearVelocity = Vector2.zero;
+            rb2D.simulated = false;
+        }
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.enabled = false;
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
     }
 
-    /// <summary>
-    /// Curar al jugador (útil para pickups)
-    /// </summary>
     public void Heal(int amount)
     {
         lives = Mathf.Min(lives + amount, maxLives);
         Debug.Log($"Jugador curado. Vidas: {lives}");
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.SetLives(lives);
+        }
     }
 }

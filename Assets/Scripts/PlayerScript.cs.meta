@@ -1,2 +1,17 @@
 fileFormatVersion: 2
 guid: e85f9cffcf293ed41a8313f998e1ec4a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameOverPanel: {instanceID: 0}
+  - grounCheck: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - jumpSound: {fileID: 8300000, guid: 4d6a2ad2236e08549a2e80628862fbd3, type: 3}
+  - coinSound: {fileID: 8300000, guid: 909bec80e2c11864c96121fa6c5913d5, type: 3}
+  - deathSound: {fileID: 8300000, guid: 47516739ae77c204b9414c9e90a884ca, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
